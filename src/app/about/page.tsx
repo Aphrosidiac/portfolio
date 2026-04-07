@@ -51,16 +51,17 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-12 mb-16 md:mb-24">
           <div>
             <p className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2">
-              The person behind the code
+              More than just the code
             </p>
             <h1 className="font-heading font-black text-5xl md:text-7xl tracking-tighter text-on-surface mb-8">
               About.
             </h1>
             <p className="text-on-surface-variant leading-relaxed max-w-xl mb-8">
-              I&apos;m not the smartest person in the room. I just don&apos;t
-              stop until the thing works. I&apos;ll sit with a problem way
-              longer than I probably should, not because I&apos;m a
-              perfectionist, but because I actually care how it turns out.
+              I&apos;m not the fastest developer you&apos;ll meet. But I&apos;m
+              the one who&apos;ll sit with a broken schema at 2AM until it makes
+              sense, rebuild an entire module because the first version felt
+              wrong, and still show up the next day ready to do it again. I care
+              about the outcome, not just the output.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div>
@@ -110,11 +111,12 @@ export default function AboutPage() {
         {/* Skills */}
         <div className="mb-16 md:mb-24">
           <p className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2">
-            Skills & Tools
+            What I work with
           </p>
           <p className="text-on-surface-variant leading-relaxed mb-8 max-w-xl">
-            The tools I keep coming back to. Some I&apos;ve been using since day
-            one, some I picked up out of necessity and just never stopped.
+            These are the tools I actually use in production — not a wishlist.
+            Every item here has been battle-tested in a real system I&apos;ve
+            shipped.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {Object.entries(skills).map(([category, items]) => (
@@ -144,12 +146,13 @@ export default function AboutPage() {
         {/* Soft Skills */}
         <div className="mb-16 md:mb-24">
           <h3 className="font-heading font-bold text-2xl text-on-surface mb-2">
-            It&apos;s not just about code.
+            Beyond the tech stack.
           </h3>
           <p className="text-on-surface-variant leading-relaxed mb-8 max-w-xl">
-            Most of my career has been solo — building entire systems end-to-end
-            for real clients. You learn fast when there&apos;s no one else to
-            hand it off to.
+            When you&apos;re the only developer on a project, you wear every
+            hat. I talk to clients, design databases, write APIs, build
+            frontends, deploy servers, and fix things at midnight. That&apos;s
+            not a complaint — it&apos;s the part I like.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {softSkills.map((skill) => (
@@ -194,36 +197,36 @@ export default function AboutPage() {
         {/* AI Proficiency */}
         <div>
           <p className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2">
-            AI-Powered Development
+            How I actually work
           </p>
           <h3 className="font-heading font-bold text-2xl text-on-surface mb-6">
-            Built with AI, shipped by me.
+            AI is my co-pilot, not my replacement.
           </h3>
           <div className="bg-surface-mid border border-outline-variant/20 rounded-sm p-6 md:p-8">
             <div className="space-y-4 text-on-surface-variant text-sm leading-relaxed max-w-3xl">
               <p>
-                I extensively use{" "}
+                I use{" "}
                 <span className="text-on-surface font-medium">
                   Claude Code
                 </span>{" "}
-                as a core development tool — AI pair programming for
-                architecture planning, full-stack code generation, database
-                schema design, debugging, and code review across all production
-                projects.
+                heavily — not to generate boilerplate, but as a thinking
+                partner. Architecture decisions, schema validation, debugging
+                edge cases, reviewing my own code before I push. It&apos;s part
+                of how I ship entire systems solo without cutting corners.
               </p>
               <p>
-                Built and shipped 5 production-grade enterprise systems
-                end-to-end as a solo developer by integrating AI into every
-                stage of the development lifecycle — from initial system design
-                to deployment and troubleshooting.
+                Five production ERPs built end-to-end with AI in the loop.
+                That&apos;s not &quot;vibe coding&quot; — that&apos;s knowing
+                how to use every tool available to deliver real software at a
+                pace that shouldn&apos;t be possible for one person.
               </p>
               <p>
-                Also experienced with{" "}
+                I also build AI into the products themselves —{" "}
                 <span className="text-on-surface font-medium">
                   N8N workflow automation
                 </span>{" "}
-                with AI service integrations, streamlining business processes
-                for printing industry operations.
+                with AI integrations, helping businesses automate the stuff they
+                shouldn&apos;t be doing manually.
               </p>
             </div>
           </div>

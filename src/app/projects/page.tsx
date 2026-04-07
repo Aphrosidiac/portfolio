@@ -2,7 +2,7 @@ const allProjects = [
   {
     name: "CetakNow",
     description:
-      "Full printing ERP system with 7 modules (Auth, Core, Documents, Sales, HRM, Production, Finance). Features include LHDN MyInvois e-invoicing, real-time production Kanban with Fabric.js design editor, full HRM ecosystem with multi-layer approval workflows, POS with loyalty points and coupon engine, and WhatsApp bulk messaging.",
+      "The biggest system I've built to date. A complete ERP for a printing business — handles everything from point-of-sale and customer loyalty, to HR with leave/payroll/KPIs, to production Kanban boards with a built-in design editor. Even integrates with Malaysia's LHDN e-invoicing system and has WhatsApp bulk messaging built in.",
     tags: ["Laravel 12", "Vue 3", "TypeScript", "Tailwind CSS", "MySQL", "Redis", "WebSocket"],
     context: "Digital Scape MY",
     stats: "136 tables · 399 routes · 85 models",
@@ -10,7 +10,7 @@ const allProjects = [
   {
     name: "Siso Print (SignScape)",
     description:
-      "3 interconnected applications sharing a single Laravel API: internal ERP (86 pages), customer portal (20 pages), and corporate website (9 pages). Features dynamic signboard pricing engine, 12-column Kanban production board, 3-tier agent discount system, dual auth (session + Sanctum), and full financial management with 6% SST.",
+      "Three separate applications that all talk to one Laravel API. The internal team uses a Vue ERP for orders and production. Customers log in to a React portal to place orders with real-time pricing. And there's a marketing website tying it all together. Includes agent discounts, credit wallets, and 42 end-to-end tests.",
     tags: ["Laravel 10", "Vue 3", "Inertia.js", "React 19", "TypeScript", "Framer Motion", "Playwright"],
     context: "Digital Scape MY",
     stats: "3 apps · 115 pages · 42 E2E tests",
@@ -18,7 +18,7 @@ const allProjects = [
   {
     name: "Dream Garage",
     description:
-      "Complete car workshop management system with 4 document types (Quotation, Invoice, Receipt, Delivery Order), an 11-status lifecycle, and document conversion chain. Race-condition-safe auto-numbering using PostgreSQL FOR UPDATE locks. Invoice-stock integration state machine with full audit trail.",
+      "A car workshop owner came to me needing software to run his business. I designed the entire system — quotations that convert to invoices, invoices that convert to receipts, stock that automatically holds when you draft an order and releases if you cancel. PostgreSQL row-level locks to prevent duplicate document numbers under load.",
     tags: ["Vue 3", "TypeScript", "Fastify 5", "Prisma", "PostgreSQL", "Chart.js"],
     context: "AP Devotion · Freelance",
     stats: "4 doc types · 11 statuses · Full audit trail",
@@ -26,18 +26,18 @@ const allProjects = [
   {
     name: "Shuda Logistics V3",
     description:
-      "Distribution management system with advanced capacity-constrained distribution algorithm featuring region-based driver scoring, priority ordering, and carton-to-pallet conversion. Persistent WhatsApp integration with session disk serialization and exponential backoff. Dynamic schema builder for end-user field customization.",
+      "A logistics company needed to automate how they distribute orders to drivers. I built an algorithm that scores drivers by region, checks vehicle capacity, handles priority orders, and converts cartons to pallets — then dispatches everything via WhatsApp automatically. The WhatsApp session persists across server restarts.",
     tags: ["Next.js 16", "TypeScript", "Supabase", "WhatsApp Web.js", "Puppeteer"],
     context: "AP Devotion · Freelance",
-    stats: "Smart allocation · WhatsApp integration · Dynamic schemas",
+    stats: "Smart allocation · WhatsApp dispatch · Dynamic schemas",
   },
   {
     name: "LearnScape",
     description:
-      "Community learning platform with multi-tier membership gating (Standard/Premium/VIP), auto-downgrade on plan expiry, course marketplace with video modules, discount code engine, and global search system (Ctrl+K) with debounced live search across 5 resource types.",
+      "A learning platform where members pay for tiered access to courses. Standard, Premium, VIP — each tier unlocks different content. Built the whole payment flow, discount code engine, video course system with YouTube embeds, and a Ctrl+K global search that searches across everything instantly.",
     tags: ["Vue 3", "Pinia", "Express 5", "MySQL", "JWT"],
     context: "Digital Scape MY",
-    stats: "3 membership tiers · Course marketplace · Global search",
+    stats: "3 tiers · Course marketplace · Global search",
   },
 ];
 
@@ -46,20 +46,20 @@ export default function ProjectsPage() {
     <main className="pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <p className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2">
-          Open source & client work
+          Client work & personal projects
         </p>
         <h1 className="font-heading font-black text-5xl md:text-7xl tracking-tighter text-on-surface mb-6">
           Projects.
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-8 mb-16">
           <p className="text-on-surface-variant leading-relaxed">
-            Some of these shipped, some are still being iterated on. Most
-            started with &quot;this should exist&quot; and ended with me
-            building the whole thing.
+            Every project here is a system I built end-to-end for a real
+            business. No toy apps, no clones. Each one started with a client
+            problem and ended with production software they use every day.
           </p>
           <p className="text-outline text-sm italic md:text-right">
-            Most good developers do programming not because they expect to get
-            paid, but because it is fun. — Linus Torvalds
+            The best way to learn how to build systems is to build systems
+            people actually depend on.
           </p>
         </div>
 

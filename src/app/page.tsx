@@ -15,10 +15,10 @@ export default function Home() {
               Hi, I&apos;m Fakhrul.
             </h1>
             <p className="text-on-surface-variant text-base md:text-lg max-w-xl leading-relaxed mb-8 animate-fade-up animate-delay-2">
-              Full-stack developer who builds production-grade enterprise systems
-              end-to-end as a solo dev. From ERP platforms with 136+ database
-              tables to logistics engines with smart distribution algorithms.
-              Usually ships. Always learning.
+              I build entire business systems alone — the kind most teams need
+              five people for. ERPs, logistics platforms, workshop tools. If it
+              needs a database, an API, and a dashboard, I&apos;ve probably
+              already built something like it.
             </p>
             <div className="flex items-center gap-4 animate-fade-up animate-delay-3">
               <a
@@ -69,7 +69,7 @@ export default function Home() {
       <section className="bg-surface-mid py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <p className="font-label text-[10px] tracking-widest uppercase text-outline text-center mb-8">
-            Companies he&apos;s built things for
+            Places I&apos;ve shipped production code for
           </p>
           <div className="flex items-center justify-center gap-12 md:gap-20 flex-wrap">
             <span className="font-heading font-bold text-lg md:text-xl text-on-surface-variant/60 hover:text-on-surface-variant transition-colors">
@@ -98,46 +98,47 @@ export default function Home() {
               />
               <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent">
                 <p className="font-label text-[9px] tracking-widest uppercase text-on-surface-variant/60">
-                  Fakhrul — always building something
+                  Somewhere between coffee and code
                 </p>
               </div>
             </div>
             <div>
               <p className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2">
-                Origin Story
+                The Backstory
               </p>
               <h2 className="font-heading font-black text-4xl md:text-5xl tracking-tight text-on-surface mb-6">
-                How it started.
+                How I got here.
               </h2>
               <div className="space-y-4 text-on-surface-variant leading-relaxed max-w-2xl">
                 <p>
-                  It didn&apos;t start with a degree or a bootcamp. It started
-                  with curiosity and a laptop. I picked up coding during my
-                  diploma years at UTHM, but what really accelerated things was
-                  building real systems for real businesses.
+                  No CS degree. No bootcamp. Just a diploma from UTHM and an
+                  obsession with making things work. The classroom taught me the
+                  basics — real clients taught me everything else.
                 </p>
                 <p>
-                  My internship at CN Cetak Niaga threw me into the printing
-                  industry — workflow automations, N8N pipelines, AI
-                  integrations. That&apos;s where I realized I wasn&apos;t just
-                  interested in code. I was interested in building things that
-                  actually solve problems.
+                  My internship at a printing company was supposed to be a
+                  checkbox. Instead, I ended up building workflow automations,
+                  wiring up N8N pipelines, and integrating AI into their
+                  operations. That six months changed how I saw development — it
+                  wasn&apos;t about writing clever code, it was about solving
+                  actual business problems.
                 </p>
                 <p>
-                  After that, I founded{" "}
+                  So I started{" "}
                   <span className="text-on-surface font-medium">
                     AP Devotion
-                  </span>{" "}
-                  — my freelance business — and started taking on full client
-                  projects. Dream Garage, Shuda Logistics, each one built solo
-                  from scratch to production. Then Digital Scape MY brought me
-                  on, and suddenly I was architecting ERP systems with 136
-                  database tables and 399 API routes.
+                  </span>
+                  , took on two Sdn Bhd clients, and built their entire systems
+                  from zero. A car workshop needed management software — I built
+                  it. A logistics company needed smart distribution — I built
+                  that too. Both solo. Both in production.
                 </p>
                 <p>
-                  I&apos;m 21. I don&apos;t have a CS degree. But I&apos;ve
-                  shipped 5 production-grade enterprise systems end-to-end, and
-                  I&apos;m not planning to slow down.
+                  Then Digital Scape handed me the keys to their tech. Now
+                  I&apos;m leading development on ERP systems with hundreds of
+                  tables and routes. I&apos;m 21, and I&apos;ve already shipped
+                  more production systems than most people do in their first five
+                  years.
                 </p>
               </div>
             </div>
@@ -146,18 +147,18 @@ export default function Home() {
       </section>
 
       {/* Trajectory */}
-      <section id="trajectory" className="scroll-mt-16">
+      <section id="experience" className="scroll-mt-16">
         <div className="max-w-7xl mx-auto px-6 md:px-8 pt-16 md:pt-32 pb-16 md:pb-32">
           <h2 className="font-heading font-black text-4xl md:text-5xl tracking-tight text-on-surface mb-3">
-            Trajectory.
+            Experience.
           </h2>
           <p className="text-on-surface-variant mb-2 max-w-xl">
-            The places I&apos;ve worked, the roles I&apos;ve held, and the
-            things I actually spent my time on.
+            Every role taught me something different. Every system I built made
+            the next one better.
           </p>
           <p className="text-outline text-sm italic mb-12">
-            Everyone starts somewhere. The trick is not stopping. —{" "}
-            <span className="text-on-surface-variant">Unknown</span>
+            You don&apos;t learn architecture from textbooks. You learn it from
+            the third time your schema falls apart.
           </p>
 
           <div className="space-y-0">
@@ -200,7 +201,7 @@ export default function Home() {
           <div className="flex items-end justify-between mb-4">
             <div>
               <p className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2">
-                Things I&apos;ve shipped.
+                What I&apos;ve built.
               </p>
               <h2 className="font-heading font-black text-4xl md:text-5xl tracking-tight text-on-surface">
                 Projects.
@@ -214,8 +215,8 @@ export default function Home() {
             </Link>
           </div>
           <p className="text-on-surface-variant mb-12 max-w-xl">
-            Production systems I built end-to-end — from database schema to
-            deployment. No templates, no tutorials.
+            Real systems running in real businesses. Each one designed,
+            developed, and deployed by me.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -254,13 +255,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="bg-surface-mid border border-outline-variant/20 rounded-lg p-8 md:p-16 grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 items-center">
             <h2 className="font-heading font-black text-3xl md:text-5xl tracking-tight text-on-surface">
-              Want to work together?
+              Got something that needs building?
             </h2>
             <div className="md:text-right">
               <p className="text-on-surface-variant leading-relaxed mb-6">
-                Open to good problems. If you&apos;ve got something worth
-                building, I&apos;d like to hear about it — reach out and
-                let&apos;s talk.
+                I take on projects that are worth the effort — systems that
+                actually matter to someone&apos;s business. If that sounds like
+                what you need, let&apos;s talk.
               </p>
               <a
                 href="mailto:ahmadfakhrulradzi05@gmail.com"
@@ -316,7 +317,7 @@ const experiences = [
     location: "Hybrid",
     date: "Mar 2026 — Present",
     description:
-      "Leading all technical development across company projects. Architected CetakNow (136 tables, 399 routes), built Siso Print's 3-app ecosystem, and developed LearnScape. Managing production deployments on Azure with Nginx, Redis, and automated backups.",
+      "Own the entire tech side of the company. Designed and built CetakNow from the ground up — a 7-module ERP that handles everything from sales to payroll. Also shipped Siso Print (3 interconnected apps) and LearnScape. I architect it, build it, deploy it, and keep it running.",
   },
   {
     role: "Full Stack Developer",
@@ -324,7 +325,7 @@ const experiences = [
     location: "Hybrid",
     date: "Jan 2026 — Mar 2026",
     description:
-      "Built foundational architecture for CetakNow's modular monolith. Developed Siso Print's internal ERP and customer-facing sites. Set up production infrastructure on Azure VPS.",
+      "Started as contract, immediately took ownership. Laid the foundation for CetakNow's entire database and module architecture. Built Siso Print's ERP frontend and spun up the Azure infrastructure from scratch.",
   },
   {
     role: "Founder / Freelance Developer",
@@ -332,7 +333,7 @@ const experiences = [
     location: "Remote",
     date: "Nov 2025 — Present",
     description:
-      "Founded a freelance dev business. Sole developer on Dream Garage (car workshop management) and Shuda Logistics (distribution management) — both built from scratch to production for Sdn Bhd clients.",
+      "Started my own thing. Two Sdn Bhd clients, two full systems — Dream Garage for a car workshop and Shuda Logistics for a distribution company. Requirements to deployment, all me.",
   },
   {
     role: "Software Development Intern",
@@ -340,7 +341,7 @@ const experiences = [
     location: "Hybrid",
     date: "Aug 2025 — Jan 2026",
     description:
-      "Developed software solutions, implemented N8N workflow automations and AI integrations for business processes in the printing industry.",
+      "Where it clicked. Built workflow automations with N8N, integrated AI into business processes, and realized I wanted to do this for a living — not just as an intern.",
   },
 ];
 
@@ -348,28 +349,28 @@ const featuredProjects = [
   {
     name: "CetakNow",
     description:
-      "Full printing ERP system with 7 modules, 136 database tables, and 399 API routes — covering sales, HRM, production, finance, and LHDN e-invoicing.",
+      "The biggest thing I've built. A complete printing business platform — sales, HR, production tracking, finance, even government e-invoicing. 136 tables, 399 routes, 7 modules. One developer.",
     tags: ["Laravel", "Vue 3", "TypeScript", "MySQL", "Redis"],
     context: "Digital Scape MY",
   },
   {
     name: "Siso Print (SignScape)",
     description:
-      "3 interconnected applications sharing a single Laravel API — internal ERP (86 pages), customer portal (20 pages), and corporate website (9 pages).",
+      "Three apps, one API. Internal ERP for staff, a portal for customers to order and track, and a marketing website — all wired together. Includes a pricing engine that calculates signboard costs in real-time.",
     tags: ["Laravel", "Vue 3", "React 19", "Inertia.js", "Playwright"],
     context: "Digital Scape MY",
   },
   {
     name: "Dream Garage",
     description:
-      "Complete car workshop management system with 4 document types, 11-status lifecycle, race-condition-safe auto-numbering, and invoice-stock state machine.",
+      "A workshop owner needed software. I built the whole thing — quotations, invoices, receipts, stock management with race-condition-safe numbering, and an 11-status document lifecycle.",
     tags: ["Vue 3", "Fastify 5", "Prisma", "PostgreSQL"],
     context: "AP Devotion · Freelance",
   },
   {
     name: "Shuda Logistics V3",
     description:
-      "Distribution management system with capacity-constrained allocation algorithm, persistent WhatsApp integration, and timezone-aware auto-distribution.",
+      "Smart distribution for a logistics company. The system figures out which driver gets which orders based on capacity, region, and priority — then sends dispatch via WhatsApp automatically.",
     tags: ["Next.js", "TypeScript", "Supabase", "WhatsApp Web.js"],
     context: "AP Devotion · Freelance",
   },
