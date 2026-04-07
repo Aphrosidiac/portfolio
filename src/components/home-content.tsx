@@ -106,17 +106,17 @@ export function HomeContent() {
             </motion.div>
           </div>
 
-          {/* Hero photo */}
+          {/* Hero photo — mobile: above text area, desktop: right column */}
           <motion.div
             initial={{ opacity: 0, x: 40, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease }}
-            className="relative hidden lg:block"
+            className="relative order-first lg:order-last"
           >
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}
-              className="relative w-full aspect-[3/4] overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+              className="relative w-full aspect-[3/4] max-h-[300px] lg:max-h-none overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
             >
               <Image
                 src="/fakhrul.jpg"
@@ -153,7 +153,7 @@ export function HomeContent() {
       <section className="bg-surface-low">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-12 items-start">
-            <SlideIn from="left" className="hidden lg:block">
+            <SlideIn from="left" className="block">
               <div className="relative w-full aspect-[4/5] overflow-hidden rounded-sm">
                 <motion.div
                   whileInView={{ scale: [1.08, 1] }}

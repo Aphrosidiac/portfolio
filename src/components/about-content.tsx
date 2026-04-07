@@ -99,13 +99,13 @@ export function AboutContent() {
           </div>
 
           {/* Polaroid photo */}
-          <SlideIn from="right" delay={0.2} className="hidden lg:block">
+          <SlideIn from="right" delay={0.2} className="block">
             <motion.div
               initial={{ rotate: 0 }}
               whileInView={{ rotate: 2 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5, ease }}
-              className="relative bg-surface-mid p-3 pb-12 shadow-2xl"
+              className="relative bg-surface-mid p-3 pb-12 shadow-2xl max-w-[280px] mx-auto lg:max-w-none"
             >
               <div className="relative w-full aspect-square overflow-hidden">
                 <Image
