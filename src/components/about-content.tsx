@@ -32,7 +32,7 @@ const skills = {
     "Tailwind CSS",
     "Inertia.js",
     "Pinia",
-    "Framer Motion",
+    "Motion",
     "Fabric.js",
   ],
   "Infrastructure & DevOps": [

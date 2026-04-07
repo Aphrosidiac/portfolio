@@ -18,14 +18,14 @@ const allProjects = [
     name: "Siso Print (SignScape)",
     description:
       "Three separate applications that all talk to one Laravel API. The internal team uses a Vue ERP for orders and production. Customers log in to a React portal to place orders with real-time pricing. And there's a marketing website tying it all together. Includes agent discounts, credit wallets, and 42 end-to-end tests.",
-    tags: ["Laravel 10", "Vue 3", "Inertia.js", "React 19", "TypeScript", "Framer Motion", "Playwright"],
+    tags: ["Laravel 10", "Vue 3", "Inertia.js", "React 19", "TypeScript", "Motion", "Playwright"],
     context: "Digital Scape MY",
     stats: "3 apps · 115 pages · 42 E2E tests",
   },
   {
     name: "Dream Garage",
     description:
-      "A car workshop owner came to me needing software to run his business. I designed the entire system — quotations that convert to invoices, invoices that convert to receipts, stock that automatically holds when you draft an order and releases if you cancel. PostgreSQL row-level locks to prevent duplicate document numbers under load.",
+      "A car workshop owner came to me needing software to run his business. I designed the entire system — quotations that convert to invoices, invoices that convert to receipts, stock that automatically holds when you draft an order and releases if you cancel. The workshop went from tracking everything on paper to running their entire operation through one dashboard.",
     tags: ["Vue 3", "TypeScript", "Fastify 5", "Prisma", "PostgreSQL", "Chart.js"],
     context: "AP Devotion · Freelance",
     stats: "4 doc types · 11 statuses · Full audit trail",
@@ -33,7 +33,7 @@ const allProjects = [
   {
     name: "Shuda Logistics V3",
     description:
-      "A logistics company needed to automate how they distribute orders to drivers. I built an algorithm that scores drivers by region, checks vehicle capacity, handles priority orders, and converts cartons to pallets — then dispatches everything via WhatsApp automatically. The WhatsApp session persists across server restarts.",
+      "A logistics company was manually assigning hundreds of orders to drivers every day. I built a system that does it automatically — scores drivers by region, checks vehicle capacity, handles priority orders, converts cartons to pallets, and dispatches everything via WhatsApp. What used to take hours now runs on its own.",
     tags: ["Next.js 16", "TypeScript", "Supabase", "WhatsApp Web.js", "Puppeteer"],
     context: "AP Devotion · Freelance",
     stats: "Smart allocation · WhatsApp dispatch · Dynamic schemas",
@@ -41,7 +41,7 @@ const allProjects = [
   {
     name: "LearnScape",
     description:
-      "A learning platform where members pay for tiered access to courses. Standard, Premium, VIP — each tier unlocks different content. Built the whole payment flow, discount code engine, video course system with YouTube embeds, and a Ctrl+K global search that searches across everything instantly.",
+      "A community platform built for a company that wanted to monetize their industry knowledge. Three membership tiers control what content members can access, with automatic downgrades when plans expire. Includes a full course marketplace with video modules, a payment and discount system, and instant search across every resource on the platform.",
     tags: ["Vue 3", "Pinia", "Express 5", "MySQL", "JWT"],
     context: "Digital Scape MY",
     stats: "3 tiers · Course marketplace · Global search",

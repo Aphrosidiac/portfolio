@@ -230,31 +230,39 @@ export function WordReveal({
 
 // ─── Marquee (infinite horizontal scroll) ───
 export function Marquee({
-  children,
-  speed = 30,
+  items,
   className,
 }: {
-  children: ReactNode;
-  speed?: number;
+  items: string[];
   className?: string;
 }) {
   return (
-    <div className={`overflow-hidden ${className ?? ""}`}>
-      <motion.div
-        className="flex gap-12 md:gap-20 whitespace-nowrap"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: speed,
-            ease: "linear",
-          },
-        }}
-      >
-        {children}
-        {children}
-      </motion.div>
+    <div
+      className={`overflow-hidden ${className ?? ""}`}
+      style={{
+        maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        WebkitMaskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+      }}
+    >
+      <div className="flex w-max animate-marquee gap-12 md:gap-20">
+        {items.map((name, i) => (
+          <span
+            key={`a-${i}`}
+            className="shrink-0 font-heading font-bold text-lg md:text-xl text-on-surface-variant/60 hover:text-on-surface-variant transition-colors whitespace-nowrap"
+          >
+            {name}
+          </span>
+        ))}
+        {items.map((name, i) => (
+          <span
+            key={`b-${i}`}
+            aria-hidden
+            className="shrink-0 font-heading font-bold text-lg md:text-xl text-on-surface-variant/60 hover:text-on-surface-variant transition-colors whitespace-nowrap"
+          >
+            {name}
+          </span>
+        ))}
+      </div>
     </div>
   );
 }

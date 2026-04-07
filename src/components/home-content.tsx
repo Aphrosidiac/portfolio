@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { TiltCard3D } from "./tilt-card-3d";
 import {
   FadeUp,
   FadeIn,
@@ -29,7 +30,7 @@ export function HomeContent() {
               transition={{ duration: 0.5, delay: 0.1, ease }}
               className="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-4"
             >
-              Full-Stack Developer & System Architect
+              Full-Stack Developer | Software Engineer
             </motion.p>
 
             <motion.h1
@@ -113,19 +114,17 @@ export function HomeContent() {
             transition={{ duration: 0.8, delay: 0.3, ease }}
             className="relative order-first lg:order-last"
           >
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.4 }}
-              className="relative w-full aspect-[3/4] max-h-[300px] lg:max-h-none overflow-hidden rounded-sm"
-            >
-              <Image
-                src="/fakhrul.jpg"
-                alt="Fakhrul Radzi"
-                fill
-                className="object-cover object-top"
-                priority
-              />
-            </motion.div>
+            <TiltCard3D tiltAmount={10} perspective={900}>
+              <div className="relative w-full aspect-square lg:aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/fakhrul.jpg"
+                  alt="Fakhrul Radzi"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </TiltCard3D>
           </motion.div>
         </div>
       </section>
@@ -137,16 +136,7 @@ export function HomeContent() {
             Places I&apos;ve shipped production code for
           </p>
         </FadeUp>
-        <Marquee speed={20}>
-          {companies.map((name) => (
-            <span
-              key={name}
-              className="font-heading font-bold text-lg md:text-xl text-on-surface-variant/60 hover:text-on-surface-variant transition-colors whitespace-nowrap"
-            >
-              {name}
-            </span>
-          ))}
-        </Marquee>
+        <Marquee items={companies} />
       </section>
 
       {/* Origin Story */}
@@ -162,15 +152,15 @@ export function HomeContent() {
                   className="relative w-full h-full"
                 >
                   <Image
-                    src="/fakhrul.jpg"
-                    alt="Fakhrul during early days"
+                    src="/setup.jpg"
+                    alt="Fakhrul's dev setup"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                   />
                 </motion.div>
                 <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/80 to-transparent">
                   <p className="font-label text-[9px] tracking-widest uppercase text-on-surface-variant/60">
-                    Somewhere between coffee and code
+                    The usual late-night setup
                   </p>
                 </div>
               </div>
@@ -198,9 +188,9 @@ export function HomeContent() {
                 <StaggerItem>
                   <p>
                     My internship at a printing company was supposed to be a
-                    checkbox. Instead, I ended up building workflow automations,
-                    wiring up N8N pipelines, and integrating AI into their
-                    operations. That six months changed how I saw development — it
+                    checkbox. Instead, I ended up building actual software
+                    solutions and automations for their business operations.
+                    That six months changed how I saw development — it
                     wasn&apos;t about writing clever code, it was about solving
                     actual business problems.
                   </p>
@@ -431,9 +421,8 @@ export function HomeContent() {
 const companies = [
   "Digital Scape MY",
   "CN Cetak Niaga",
-  "AP Devotion",
-  "Digital Scape MY",
-  "CN Cetak Niaga",
+  "Dream Garage",
+  "Shuda Logistics",
   "AP Devotion",
 ];
 
@@ -468,7 +457,7 @@ const experiences = [
     location: "Hybrid",
     date: "Aug 2025 — Jan 2026",
     description:
-      "Where it clicked. Built workflow automations with N8N, integrated AI into business processes, and realized I wanted to do this for a living — not just as an intern.",
+      "Where it clicked. Built software solutions and automations for real business operations, and realized I wanted to do this for a living — not just as an intern.",
   },
 ];
 
