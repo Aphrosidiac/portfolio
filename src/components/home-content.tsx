@@ -116,7 +116,7 @@ export function HomeContent() {
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}
-              className="relative w-full aspect-[3/4] max-h-[300px] lg:max-h-none overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+              className="relative w-full aspect-[3/4] max-h-[300px] lg:max-h-none overflow-hidden rounded-sm"
             >
               <Image
                 src="/fakhrul.jpg"
